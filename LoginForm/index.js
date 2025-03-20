@@ -1,6 +1,6 @@
 // Declare static username and password, other variables
-const validUsername = "user";
-const validPassword = "user123";
+const correctUsername = "user";
+const correctPassword = "user123";
 let attempts = 0;
 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
@@ -17,7 +17,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Logic here
 
     // Display welcome message
-    if (username === validUsername && password === validPassword) {
+    if (username === correctUsername && password === correctPassword) {
         loginForm.style.display = "none"; 
         welcomeMessage.classList.remove("hidden"); 
     } else {
